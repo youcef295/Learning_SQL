@@ -72,5 +72,5 @@ SELECT
     *
 FROM
     student;
--- test
+-- test a voir 
 --DROP TABLE student;
