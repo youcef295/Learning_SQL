@@ -68,9 +68,35 @@ DELETE FROM student
 WHERE
     major = 'UNDEFINED';
 
+UPDATE student
+SET
+    major = 'undecided',
+    name = 'student'
+WHERE
+    student_id = 1;
+
+----------------- BASIC QUERIES ---------------------- 
+SELECT
+    *
+FROM
+    student
+ORDER BY
+    student_id,
+    major;
+
+SELECT
+    *
+FROM
+    student
+LIMIT
+    2;
+
+SELECT * FROM student WHERE name IN ('Youcef', 'Claire', 'Alice', 'DAVID');
+
 SELECT
     *
 FROM
     student;
+
 -- test a voir 
 --DROP TABLE student;
